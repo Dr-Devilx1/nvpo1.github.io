@@ -1,0 +1,1016 @@
+@font-face {
+    font-family: comic;
+    src: url(font/Urbanist[wght].ttf);
+}
+
+
+.zom{
+
+    animation: zooming 2s ease-in-out infinite;
+
+}
+
+
+.bnc{
+
+    animation: bounce 2s ease-in-out infinite;
+
+}
+
+.spn{
+
+    animation: spining 2s ease-in-out infinite;
+
+}
+
+
+
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #555;
+
+    list-style: none;
+    text-decoration: none;
+
+    max-width: 100vw;
+
+    transition: all 0.6s;
+
+}
+
+body {
+    font-family: comic;
+    background-color: #fcfbff;
+    /* color: #333; */
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+}
+
+
+h1 {
+    font-size: 5vw;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 3.5vw;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+
+
+/* ............................................ HEADER ...............................  */
+
+
+/* Header Styles */
+.header {
+    background: transparent;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 1% 5%;
+    /* position: fixed; */
+    width: 100vw;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2vw; */
+    width: 100%;
+    /* max-width: 98vw; */
+    margin: 0 auto;
+    /* background: #f8f9fc; */
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* gap: 1%; */
+}
+
+.logo-img {
+    /* width: 40px; */
+    height: 3.5vw;
+    /* border-radius: 50%; */
+}
+
+.nav {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15%;
+    margin: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5vw;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.buy-button {
+    background-color: #3C39ED;
+    color: #fff;
+    padding: 1.5% 4%;
+    text-decoration: none;
+    border-radius: 0.5vw;
+    /* transition: background-color 0.6s ease; */
+}
+
+.buy-button:hover {
+    /* background: transparent; */
+    /* border: 1px solid #3C39ED; */
+    /* background: #5d5bff; */
+    scale: 1.1;
+    color: black;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 6vw;
+    height: 0.8vw;
+    border-radius: 5vw;
+    background-color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* ............................................ HEADER ...............................  */
+
+
+.sect0 {
+
+    width: 100vw;
+    overflow-x: hidden;
+    background: url(images/bg\ 0.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 0 5% 0;
+
+}
+
+.s0md1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+
+}
+
+.s0d11 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+
+    margin: 0 0 0 5%;
+}
+
+.s0d11 h2 {
+    color: black;
+}
+
+.s0d11 p {
+    margin: 5% 0;
+}
+
+.s0d11 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10%;
+
+    justify-content: left;
+    align-items: center;
+}
+
+.s0d11 div img {
+
+    height: 4vw;
+    border-radius: 1vw;
+
+}
+
+
+
+.s0d11 div img:hover {
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #3835ebaa;
+
+}
+
+.s0d12 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+
+}
+
+.s0d12 img {
+    width: 48vw;
+    z-index: 1;
+    position: relative;
+}
+
+/* ............................................ SECTION 1 ...............................  */
+
+.sect1 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+
+    margin: 5% 0;
+
+}
+
+.sect1 img {
+
+    height: 5vw;
+    border-radius: 2.4vw;
+
+}
+
+.sect1 img:hover {
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #3835ebaa;
+
+}
+
+
+
+/* ............................................ SECTION 1 ...............................  */
+
+.sect2 {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+    padding: 5% 0;
+    width: 100vw;
+
+}
+
+.s2d1 {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+.s2d1 img {
+
+    height: 3vw;
+    border-radius: 2.4vw;
+
+}
+
+/* .s2d1 img:hover{
+
+    scale: 1.1;
+    box-shadow: 0 0 15px #3835ebaa;
+
+} */
+
+.s2d1 h3 {
+    color: black;
+}
+
+
+.s2d2 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+
+    margin: auto;
+    width: 90vw;
+
+
+}
+
+.s2d2 div {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+    background: #eeebff;
+    padding: 2% 1%;
+    border-radius: 1vw;
+    height: 30vw;
+    width: 30vw;
+
+}
+
+.s2d2 div img {
+
+    width: 90%;
+    margin: auto;
+
+}
+
+.s2d2 h6 {
+    color: black;
+    text-align: left;
+    margin: 3% 0 2% 6%;
+    font-weight: 700;
+
+}
+
+.s2d2 p {
+
+
+    margin: 0% 0 2% 6%;
+
+}
+
+
+
+/* ............................................ SECTION 2 ...............................  */
+
+.sd-ftrs {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+.sd-ftrs img {
+
+    height: 3vw;
+    border-radius: 2.4vw;
+
+}
+
+.sd-ftrs h3 {
+    color: black;
+}
+
+
+/* ............................................ OFFER ...............................  */
+
+.bclr {
+
+    background: linear-gradient(to top, #bacaff 0%, #FCFCFB 100%);
+
+}
+
+
+.sect3 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: space-around;
+    align-items: center;
+    gap: 10vw;
+    padding: 10vw 5vw;
+    width: 100vw;
+
+}
+
+.s3dm1 .s3d12 {
+
+    margin: 5% 0 0 23%;
+
+}
+
+.s3md {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+
+}
+
+.s3d11 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.s3d11 img {
+
+    width: 40vw;
+
+}
+
+
+.s3d12 {
+
+    margin: 10% 0 0 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: start;
+
+}
+
+.s3d12 p {
+
+    font-size: 1vw;
+    color: #3C39ED;
+
+}
+
+.s3d12 h5 {
+    color: black;
+}
+
+.s3d12 ul {
+    list-style: circle !important;
+}
+
+
+/* ............................................ SECTION 3 ...............................  */
+
+
+.sect4 {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100vw;
+
+}
+
+
+.s4md1 {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+
+.s4md1 img {
+
+    height: 3vw;
+    border-radius: 2.4vw;
+
+}
+
+.s4md1 h3 {
+    color: black;
+}
+
+
+.s4md2 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 2% 5% 5% 5%;
+
+}
+
+.s4d21 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: start;
+    align-items: center;
+    gap: 2vw;
+    margin: 0 1%;
+    padding: 5% 1%;
+    background: white;
+    border-radius: 2vw;
+    text-align: center;
+
+    width: 25vw;
+    height: 25vw;
+
+}
+
+.s4d21:hover {
+
+    border: 0.2vw solid #3C39ED;
+
+}
+
+.s4d21 img {
+
+    height: 5vw;
+
+}
+
+.s4d21 h6 {
+
+    font-size: 2vw;
+    font-weight: 700;
+    color: black;
+
+}
+
+/* ............................................ SECTION4 ...............................  */
+
+
+
+.sect5 {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100vw;
+
+    padding: 5%;
+
+}
+
+
+.s5md1 {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+
+.s5md1 img {
+
+    height: 3vw;
+    border-radius: 2.4vw;
+
+}
+
+.s5md1 h3 {
+    color: black;
+}
+
+
+.milimg {
+
+    width: 60vw;
+    margin: 1% auto 3% auto;
+
+}
+
+
+.s5md2 {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    /* background: wheat; */
+    width: 80vw;
+
+    padding: 2% 1%;
+
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.187);
+    box-shadow: 0 0 5px rgba(97, 97, 97, 0.491);
+
+
+}
+
+
+.s5md2 div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    width: 100%;
+
+}
+
+.s5md2 div img {
+
+    height: 3vw;
+
+}
+
+/* ............................................ SECTION 5 ...............................  */
+
+.sect6 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20vw;
+
+    margin: 5%;
+
+
+}
+
+
+
+.sect6 div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    width: 100%;
+
+
+}
+
+.s6d1 {
+
+    gap: 20% !important;
+
+}
+
+/* ............................................ SECTION 6 ...............................  */
+
+.bpara {
+
+    color: #3C39ED;
+    width: 100vw;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+.sect7 {
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+.s7md {
+
+    background: url(images/banner\ bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 80%;
+    height: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: start;
+
+    margin: 5% 0 5% 0%;
+    border-radius: 2vw;
+
+
+}
+
+.s7md h6 {
+
+    color: white;
+    width: 60%;
+    font-weight: 700;
+    margin: 5% 0 5% 5%;
+
+}
+
+.s7md div {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: left;
+    align-items: center;
+    gap: 3%;
+    margin: 0% 0 5% 5%;
+
+
+}
+
+.s7md img {
+
+    height: 4vw;
+    cursor: pointer;
+
+}
+
+/* ............................................ SECTION 7 ...............................  */
+
+
+/* ............................................  POSITION ABSOLUTE  ...............................  */
+
+
+.posabs {
+
+    position: absolute;
+
+}
+
+
+
+.chrt {
+
+    width: 50vw;
+    top: 75%;
+    left: 25%;
+    border-radius: 50%;
+    /* background: #007bff; */
+
+}
+
+.lne1 {
+
+    /* width: 50vw; */
+    height: 55vw;
+    top: 30%;
+    left: 60%;
+    /* border-radius: 50%; */
+    /* background: #007bff; */
+
+}
+
+
+.lne2 {
+
+    /* width: 50vw; */
+    height: 45vw;
+    top: 41%;
+    left: 60%;
+    /* border-radius: 50%; */
+    /* background: #007bff; */
+
+}
+
+
+.adrn1 {
+
+    height: 5vw;
+    top: 29.5%;
+    left: 57.5%;
+
+}
+
+
+
+.adrn2 {
+
+    height: 5vw;
+    top: 40.7%;
+    left: 57.5%;
+
+
+}
+
+
+.iadrn {
+
+    height: 5vw;
+    top: 49.8%;
+    left: 57.5%;
+
+}
+
+
+/* ............................................  POSITION ABSOLUTE  ...............................  */
+
+
+/* ............................................ FOOTER ...............................  */
+
+
+.footer {
+    background-color: #f5f5ff;
+    padding: 4% 2%;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 2% 5%;
+}
+
+.footer-left {
+    flex: 4;
+    /* min-width: 300px; */
+    /* width: 50; */
+    /* margin-bottom: 2%; */
+    margin: 0 5% 0 0;
+
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    /* margin-bottom: 15px; */
+    margin: 0 0 3% 0;
+}
+
+.footer-logo-img {
+    /* width: 50px; */
+    height: 4vw;
+    /* border-radius: 50%; */
+}
+
+.footer-disclaimer {
+    font-size: 1.1vw;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.footer-disclaimer strong {
+    color: #3C39ED;
+}
+
+.footer-copyright {
+    font-size: 1.1vw;
+    margin-bottom: 10px;
+}
+
+.footer-terms a {
+    text-decoration: none;
+    /* color: #007bff; */
+    font-size: 1.1vw;
+}
+
+.footer-terms a:hover {
+    text-decoration: underline;
+    color: #3C39ED;
+}
+
+.footer-menu,
+.footer-social {
+    flex: 1;
+    /* min-width: 200px; */
+    /* margin-bottom: 20px; */
+    width: 100%;
+}
+
+.footer-menu h4,
+.footer-social h4 {
+    font-size: 2vw;
+    /* margin-bottom: 10px; */
+    margin: 0 0 10% 0;
+    color: #3C39ED;
+}
+
+.footer-menu ul,
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-menu li,
+.footer-social li {
+    margin: 5% 0;
+}
+
+.footer-menu a,
+.footer-social a {
+    text-decoration: none;
+    /* color: #007bff; */
+    font-size: 1.2vw;
+}
+
+.footer-menu a:hover,
+.footer-social a:hover {
+    text-decoration: underline;
+    color: #3C39ED;
+}
